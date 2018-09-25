@@ -1,0 +1,28 @@
+开发工具：Android Studio
+1 安装JDK
+2 直接解压adt
+打开eclipse
+
+
+安卓模拟器
+
+查看设备是否连接成功
+windows-show view-other-android-devices
+模拟器跟eclipse没有连接成功
+1：devices-reset adt
+2:任务管理器-详细信息-关闭adb.exe-关闭模拟器
+-找到H:\Android\adt-bundle-windows-x86-20131030\sdk\platform-tools下的adb.exe双击重启-重启模拟器
+3:任务管理器-详细信息-关闭adb.exe-关闭模拟器-关闭eclipse
+-找到H:\Android\adt-bundle-windows-x86-20131030\sdk\platform-tools下的adb.exe双击重启-重启模拟器
+目录结构
+src:java源代码目录
+gen
+assets:资源目录 （图片 视频 音乐）
+bin
+libs:依赖的第三方包
+res:资源目录
+		drawable***(图片目录)不同分辨率的图片
+		layout:布局文件
+		menu:菜单
+		values
+				dimens.xml
