@@ -90,6 +90,7 @@ public class MainActivity extends Activity {
 		//往intent对象中存入值(key-value键值对的形式存储)
 		intent.putExtra("BMI", bmi);
 		intent.putExtra("SEX", sex);
+
 		//开始调转页面
 		startActivity(intent);
 	}
