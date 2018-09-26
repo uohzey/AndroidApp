@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <ImageView
+        android:id="@+id/result_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/bmi_1"
+         />
+	<TextView 
+	    android:id="@+id/result_tv"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="BMI:21\n提示:正常:\n性别:男"
+	    android:textColor="#F00"
+	    android:textSize="20sp"
+	    android:layout_below="@+id/result_img"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="20dp"
+	    />
+</RelativeLayout>
