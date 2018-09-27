@@ -54,7 +54,61 @@ public class MainActivity extends Activity {
 				}, time);
 			}
 		});
-		}
+		talkBtn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				bg.setBackgroundResource(R.drawable.talk_animal);
+				AnimationDrawable AnimationDrawable=(AnimationDrawable) bg.getBackground();
+				//开始播放动画
+				AnimationDrawable.setOneShot(true);
+				AnimationDrawable.start();
+				int time=0;
+				//AnimationDrawable.getNumberOfFrames() 得到动画中所有帧数
+				for (int i = 0; i < AnimationDrawable.getNumberOfFrames(); i++) {
+					time+=AnimationDrawable.getDuration(i);
+				}
+				handler.postDelayed(new Runnable() {
+					
+					@Override
+					public void run() {
+						bg.setBackgroundResource(R.drawable.breath_animal);
+						AnimationDrawable bgAnim= (AnimationDrawable) bg.getBackground();
+						bgAnim.start();
+						
+					}
+				}, time);
+			}
+		});
+		fartBtn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				bg.setBackgroundResource(R.drawable.fart_animal);
+				AnimationDrawable AnimationDrawable=(AnimationDrawable) bg.getBackground();
+				//开始播放动画
+				AnimationDrawable.setOneShot(true);
+				AnimationDrawable.start();
+				int time=0;
+				//AnimationDrawable.getNumberOfFrames() 得到动画中所有帧数
+				for (int i = 0; i < AnimationDrawable.getNumberOfFrames(); i++) {
+					time+=AnimationDrawable.getDuration(i);
+				}
+				handler.postDelayed(new Runnable() {
+					
+					@Override
+					public void run() {
+						bg.setBackgroundResource(R.drawable.breath_animal);
+						AnimationDrawable bgAnim= (AnimationDrawable) bg.getBackground();
+						bgAnim.start();
+						
+					}
+				}, time);
+			}
+		});
+	}
 	/**
 	 * 初始化默认动画
 	 */
