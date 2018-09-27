@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/result_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/aries"
+         />
+	<TextView 
+	    android:id="@+id/result_tv"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="白羊座（Aries），黄道十二星座之第一宫，位于双鱼座之东，金牛座之西，出生日期为阳历3月21日~4月20日。白羊座就像小孩子一样，直率、热情、冲动，但也十分的自我为中心和孩子气。"
+	    android:textColor="#F00"
+	    android:textSize="20sp"
+	    android:layout_below="@+id/result_img"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="20dp"
+	    />
+
+</RelativeLayout>
