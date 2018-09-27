@@ -168,8 +168,11 @@ public final class R {
         public static final int tomcat_logo=0x7f020090;
     }
     public static final class id {
-        public static final int action_settings=0x7f090001;
+        public static final int action_settings=0x7f090004;
         public static final int bg=0x7f090000;
+        public static final int fart_btn=0x7f090003;
+        public static final int look_btn=0x7f090001;
+        public static final int talk_btn=0x7f090002;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
